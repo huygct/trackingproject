@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="314215841">
+  <component name="DataSourceManagerImpl" format="xml" hash="3029384964">
     <data-source source="LOCAL" name="defaultPersistenceUnit" uuid="d1f6f9bc-fc43-4422-89d3-0dceee652f83">
       <driver-ref>hsqldb.remote</driver-ref>
       <jdbc-driver>org.hsqldb.jdbcDriver</jdbc-driver>
@@ -11,6 +11,20 @@
           <url>file://$MAVEN_REPOSITORY$/org/hsqldb/hsqldb/2.2.9/hsqldb-2.2.9.jar</url>
         </library>
       </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="MySQL - tracking_project_db@localhost" uuid="0550f57d-17c0-42e5-a8e7-4ca2b83f7d7b">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/tracking_project_db</jdbc-url>
+      <user-name>root</user-name>
+      <schema-pattern>tracking_project_db.*</schema-pattern>
+      <default-schemas>tracking_project_db.*</default-schemas>
+      <driver-properties>
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+      </driver-properties>
+      <libraries />
     </data-source>
   </component>
 </project>
